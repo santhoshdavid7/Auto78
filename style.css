@@ -48,9 +48,25 @@ input, select {
   font-size: 14px;
 }
 
-.gender {
-  margin: 10px 0;
+/* Gender Section */
+.gender-group {
+  margin: 15px 0;
   text-align: left;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
 }
 
 /* Buttons */
