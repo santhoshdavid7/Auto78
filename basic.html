@@ -9,30 +9,49 @@
   <div class="container">
     <h1>Basic Details</h1>
     <form action="professional.html">
+      
+      <!-- Full Name -->
       <input type="text" placeholder="Full Name" required>
+      
+      <!-- Phone -->
       <input type="tel" placeholder="Phone Number" required>
+      
+      <!-- Email -->
       <input type="email" placeholder="Email Address" required>
-      <div class="form-group"> 
-       <label>Gender</label>
-       <div class="radio-group">
-        <label><input type="radio" name="gender" value="Male"> Male</label>
-        <label><input type="radio" name="gender" value="Female"> Female</label>
-        <label><input type="radio" name="gender" value="Other"> Other</label>
-      </div> 
+      
+      <!-- Gender -->
+      <div class="gender-group"> 
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+      
+      <!-- Address -->
       <input type="text" placeholder="Address" required>
+      
+      <!-- City -->
       <input type="text" placeholder="City" required>
+      
+      <!-- State -->
       <select required>
         <option value="">Select State</option>
         <option>Tamil Nadu</option>
         <option>Kerala</option>
         <option>Karnataka</option>
       </select>
+      
+      <!-- Country -->
       <select required>
         <option value="">Select Country</option>
         <option>India</option>
         <option>USA</option>
         <option>UK</option>
       </select>
+      
+      <!-- Continue Button -->
       <button type="submit">Continue</button>
     </form>
   </div>
