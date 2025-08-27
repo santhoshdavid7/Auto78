@@ -9,7 +9,7 @@ body.grey-white {
 }
 
 body.violet {
-  background: linear-gradient(135deg, violet, purple);
+  background: linear-gradient(135deg, grey, black);
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ body.violet {
   padding: 30px;
   border-radius: 20px;
   border: 4px solid;
-  border-image: linear-gradient(45deg, violet, purple, grey) 1;
+  border-image: linear-gradient(45deg, White, black, grey) 1;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   text-align: center;
   width: 400px;
@@ -31,7 +31,7 @@ body.violet {
 
 /* Headings */
 h1 {
-  color: darkviolet;
+  color: Grey;
   margin-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@ input, select {
   border-radius: 12px;
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
-              linear-gradient(45deg, violet, purple) border-box;
+              linear-gradient(45deg, Grey, black) border-box;
   outline: none;
   font-size: 14px;
 }
@@ -63,14 +63,14 @@ button {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background: linear-gradient(45deg, violet, purple);
+  background: linear-gradient(45deg, grey, white);
   cursor: pointer;
   transition: transform 0.2s;
 }
 
 button:hover {
   transform: scale(1.05);
-  background: linear-gradient(45deg, purple, violet);
+  background: linear-gradient(45deg, grey, white);
 }
 
 small {
