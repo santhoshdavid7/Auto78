@@ -1,79 +1,81 @@
-/* General Body Style */
-body {
-  margin: 0;
+/* Backgrounds */
+body.grey-white {
+  background: linear-gradient(135deg, Grey, white);
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff5f9e, #a64cf5);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-/* Form Container */
+body.violet {
+  background: linear-gradient(135deg, Grey, white);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
 .container {
-  background: #fff0f5;
+  background: rgba(255,255,255,0.95);
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  width: 400px;
-  max-width: 90%;
-}
-
-/* Title */
-.container h1 {
+  border-radius: 20px;
+  border: 4px solid;
+  border-image: linear-gradient(45deg, Grey, White, Black) 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   text-align: center;
-  color: Grey;
-  margin-bottom: 20px;
-  font-size: 24px;
+  width: 400px;
 }
 
-/* Input Fields */
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select {
-  width: 100%;
-  padding: 10px;
+/* Headings */
+h1 {
+  color: darkviolet;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input, select {
+  width: 90%;
+  padding: 12px;
   margin: 10px 0;
-  border: 2px solid Grey;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, Grey, White) border-box;
   outline: none;
   font-size: 14px;
 }
 
-/* Radio Group Fix */
-.radio-group {
-  display: flex;
-  gap: 20px; /* space between options */
+.gender {
   margin: 10px 0;
+  text-align: left;
 }
 
-.radio-group label {
-  font-size: 16px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  gap: 5px; /* space between radio and text */
-}
-
-/* Button */
-button,
-input[type="submit"] {
+/* Buttons */
+button {
   width: 100%;
   padding: 12px;
   margin-top: 15px;
-  background: linear-gradient(135deg, #a64cf5, #ff5f9e);
   border: none;
-  border-radius: 8px;
-  color: white;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, Grey, White);
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.2s;
 }
 
-button:hover,
-input[type="submit"]:hover {
-  background: linear-gradient(135deg, #ff5f9e, #a64cf5);
+button:hover {
   transform: scale(1.05);
+  background: linear-gradient(45deg, Grey, White);
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: grey;
 }
